@@ -66,3 +66,14 @@ for paragraph in paragraphs:
     print("Paragraph:")
     for line in paragraph:
         print("Line:", line)
+        
+       
+'''In the code above, we define two functions: combine_boxes_to_lines and combine_lines_to_paragraphs. The combine_boxes_to_lines function takes a list of word bounding boxes (boxes) and a maximum allowed gap between word boxes in a line (max_gap). It sorts the boxes by their y-coordinate, iterates through them, and combines boxes that are close together vertically into lines. The result is a list of lines.
+
+The combine_lines_to_paragraphs function takes a list of lines (lines) and a maximum allowed gap between lines in a paragraph (max_line_gap). It iterates through the lines and combines lines that are close together vertically into paragraphs. The result is a list of paragraphs.
+
+To use these functions, you need to pass in your list of word bounding boxes (word_boxes) and specify the maximum allowed gaps (max_line_gap and max_paragraph_gap). The resulting lines and paragraphs are then available for further processing or printing.
+
+Note that the code assumes that the word bounding boxes are represented as lists of [x, y, width, height] where x and y represent the top-left coordinates of the box, and width and height represent the dimensions of the box. Adjust the code accordingly if your bounding boxes are represented differently.
+'''
+
