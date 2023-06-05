@@ -71,3 +71,14 @@ In conclusion, Handwritten Text Recognition offers significant advantages for th
 
 
 
+ MER, WIL, WIP, WER, and CER are commonly used metrics to evaluate the performance and accuracy of an OCR system. Here's what each of these metrics represents:
+
+MER (Character Match Error Rate): MER, also known as Character Match Error Rate, measures the percentage of characters in the OCR output that do not match the corresponding characters in the ground truth or reference text. It represents the overall character recognition error rate and is often reported as a percentage.
+WIL (Word Identification Error Rate): WIL, or Word Identification Error Rate, measures the percentage of words in the OCR output that are incorrectly identified compared to the reference words. It provides an indication of the word-level accuracy of the OCR system.
+WIP (Word Insertion and Deletion Error Rate): WIP, or Word Insertion and Deletion Error Rate, focuses specifically on the errors related to word insertions and deletions in the OCR output. It measures the percentage of words that are incorrectly inserted or deleted compared to the reference words.
+WER (Word Error Rate): WER, or Word Error Rate, represents the percentage of words in the OCR output that differ from the reference words, taking into account substitutions, insertions, and deletions. It is a comprehensive metric that considers all types of word-level errors.
+CER (Character Error Rate): CER, or Character Error Rate, measures the percentage of characters in the OCR output that differ from the reference characters, considering substitutions, insertions, and deletions. It provides a granular assessment of character-level accuracy and error rates.
+These metrics are commonly used in OCR evaluation to quantitatively measure the accuracy of the OCR system by comparing its output with the ground truth or reference text. They help assess the performance of the OCR system in terms of character and word recognition, as well as the specific types of errors made, such as substitutions, insertions, and deletions. The choice of which metrics to use depends on the specific evaluation requirements and the level of granularity needed for analysis.
+
+
+
