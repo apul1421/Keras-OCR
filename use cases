@@ -82,3 +82,13 @@ These metrics are commonly used in OCR evaluation to quantitatively measure the 
 
 
 
+
+While Google Cloud Platform (GCP) Vision API OCR offers powerful capabilities, there are several challenges that users may encounter:
+
+Accuracy with Handwriting: Vision API OCR may face difficulties in accurately recognizing handwritten text, especially if the handwriting is cursive, has unusual styles, or contains complex variations. Handwriting recognition can be inherently challenging due to the lack of standardized patterns and the diversity of individual writing styles.
+Complex Document Layouts: Documents with complex layouts, such as tables, forms, or documents with multiple columns, can pose challenges for OCR recognition. Extracting structured data accurately from such documents requires additional processing steps and may result in lower accuracy compared to simpler document layouts.
+Poor Image Quality: OCR accuracy is highly dependent on the quality of the input image. Blurriness, low resolution, lighting variations, noise, or skewed images can negatively impact the accuracy of OCR results. Preprocessing steps may be necessary to enhance image quality before performing OCR.
+Language Support and Specific Fonts: While Vision API OCR supports multiple languages, the accuracy and performance may vary across different languages. Additionally, certain uncommon or specific fonts may not be accurately recognized, resulting in lower accuracy for documents containing such fonts.
+Limited Customization: Vision API OCR provides pre-trained models that work well for general OCR tasks. However, the ability to customize the OCR models to handle domain-specific documents, unique layouts, or specialized fonts may be limited. This can be a challenge for organizations with specific OCR requirements.
+Data Privacy and Security: Sending sensitive or confidential documents to a cloud-based OCR service raises concerns about data privacy and security. Organizations need to carefully evaluate and ensure that the chosen OCR solution complies with their data protection and security requirements.
+Cost Considerations: The usage of Vision API OCR incurs costs based on the number of OCR requests and processed data. For organizations with high OCR volume, the cost of using the service should be taken into account when considering its feasibility and affordability.
