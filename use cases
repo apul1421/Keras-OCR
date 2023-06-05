@@ -10,3 +10,34 @@ Regulatory Compliance: Compliance with regulations often involves reviewing larg
 Customer Relationship Management (CRM): Handwritten text analysis can aid in maintaining customer relationship databases by extracting and analyzing handwritten information from customer feedback forms, surveys, or handwritten notes made by customer service representatives. This helps banks gain insights into customer preferences, concerns, and feedback for better customer service and personalized offerings.
 KYC (Know Your Customer) Compliance: Banks are required to verify the identity of their customers as part of KYC procedures. Handwritten text analysis can extract relevant information from handwritten identification documents, such as passports or driver's licenses, to automate the verification process and ensure compliance.
 Historical Data Analysis: Handwritten records, such as account statements and transaction ledgers, can be digitized and analyzed using handwritten text analysis techniques. This enables banks to extract valuable insights, identify historical trends, and perform data-driven analysis for business intelligence purposes.
+
+
+There are several popular OCR (Optical Character Recognition) libraries available that provide pre-trained models for extracting text from images or scanned documents. Some of the prominent OCR libraries include:
+
+Tesseract: Tesseract is an open-source OCR engine developed by Google. It supports various languages and provides pre-trained models for accurate text extraction. Tesseract has extensive community support and is available for multiple programming languages, including Python.
+OCRopus: OCRopus is another open-source OCR system that is based on Tesseract. It offers additional tools and libraries for layout analysis, pre-processing, and post-processing of OCR results.
+Adobe Acrobat OCR: Adobe Acrobat, a popular PDF editor, includes its own OCR technology for extracting text from scanned documents. It provides accurate results and supports multiple languages.
+Microsoft Azure Cognitive Services OCR: Microsoft Azure offers OCR as a part of its Cognitive Services suite. It provides a cloud-based OCR API that can be easily integrated into applications. It supports multiple languages and offers high accuracy in text extraction.
+Amazon Textract: Amazon Textract is a cloud-based OCR service provided by Amazon Web Services (AWS). It offers advanced OCR capabilities, including the extraction of structured data from forms and tables. It supports various document formats and provides SDKs for integration with different programming languages.
+ABBYY FineReader: ABBYY FineReader is a commercial OCR software that offers high accuracy in text recognition. It supports multiple languages, document formats, and provides additional features like document layout analysis and formatting preservation.
+GCP Vision API: Google Cloud Platform's Vision API includes OCR capabilities for extracting text from images. It offers pre-trained models, supports multiple languages, and provides cloud-based OCR services.
+These are just a few examples of well-known OCR libraries and services available in the market. Each library may have its own strengths, language support, and pricing options, so it's important to evaluate your specific requirements before choosing one for your project.
+
+
+
+
+Keras-OCR is a Python library that combines the power of Keras and the TensorFlow deep learning framework to provide an end-to-end Optical Character Recognition (OCR) solution. It offers a simple and user-friendly interface for performing OCR tasks, such as text extraction from images or scanned documents.
+
+Keras-OCR utilizes a deep learning approach for character recognition and text detection. It is built on top of the Keras deep learning library, which provides a high-level API for constructing and training neural networks. The underlying neural network models in Keras-OCR are implemented using TensorFlow, a widely-used open-source deep learning framework.
+
+The library provides pre-trained models that have been trained on large datasets to recognize characters and words. These models are capable of accurately recognizing text in various languages and fonts. Keras-OCR also supports text detection, allowing you to locate and extract text regions from images.
+
+Key features of Keras-OCR include:
+
+Text extraction from images or scanned documents.
+Support for multi-language text recognition.
+Word-level and character-level recognition.
+Text region detection for locating text in images.
+Easy integration with other Python libraries and frameworks.
+Customizability, allowing you to fine-tune or train your own OCR models.
+Keras-OCR simplifies the process of implementing OCR functionality in your projects by providing pre-trained models and a straightforward API. It can be used for a wide range of applications, including document processing, data extraction, text recognition in images, and more.
