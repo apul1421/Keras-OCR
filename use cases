@@ -179,6 +179,40 @@ In addition to the above, here are some specific examples of graphs and charts t
 Generative AI is a powerful new tool that can be used to create graphs and charts that can help banks to better understand the needs of their customers and to provide them with a more personalized and efficient customer support experience.
 
 
+Introduction:
+I am Apul Gupta, an AVP responsible for Business Consulting for Team Innovation, reporting from the Bangalore site. I joined HSBC on April 20th, 2023. During the past six months, I have embarked on a remarkable learning journey filled with challenges and innovation. I have been actively involved in diverse projects and have made significant contributions to our team's success. In this short period, I have had the immense opportunity to work in various genres of advanced analytics, expanding my knowledge base in both technical and product development domains.
+Functional Contributions:
+1. iSteno (Intelligent Stenographer):
+This year has been a resounding success for iSteno, which was one of the core products of the innovation team. I have played a pivotal role in advancing iSteno from the experimental phase to the User Acceptance Testing (UAT) phase, successfully testing it in two markets: India (INM) and the United Kingdom (UK).
+a) Developing a Project Plan and UAT Manual: Considering the headcount constraints and strict timelines, I developed an agile project plan with a continuous feedback loop mechanism that enabled the team to successfully complete the UAT and validation for both markets. I also created a comprehensive UAT manual, serving as a one-stop solution for all instructions and FAQs related to the UAT. This manual played a crucial role in reducing effort and delays.
+b) Stakeholder Management: Stakeholder management and tool adoption were initial challenges faced by the team during the UAT. To address this, I organized and led demo sessions for the teams, providing daily/weekly reports to keep stakeholders updated on the UAT progress, including accuracy percentages and Word Error Rates (WER).
+c) Device Success Matrix for UAT: I collaborated with the team to develop the success matrix logic for the UAT, calculating WER, critical WER of the transcript, and summarization accuracy.
+d) On-boarding New Markets and Teams: I worked closely with different teams, including fraud and CILA, to incorporate the iSteno tool into various use cases across the bank.
+e) Restart iSteno Services: I closely collaborated with the data loss prevention and IT security teams to address all queries and obtain architecture compliance approval on all nine levers to restart iSteno services.
+f) Future Development Plan: Based on the learnings from the UAT, I have developed a plan for model training and resolving known issues in the iSteno standalone tool.
+Impact:
+• With proper project planning, the team successfully completed the UAT in two markets, INM and UK, achieving transcript and summary accuracies of 82.81% and 80.3%, respectively.
+• Through continuous follow-ups and a backward-working approach, the team was able to restart development work after the IT team had shut down the services.
+2. NPS (Net Promoter Score) Analysis
+Net promoter score (NPS) is a customer loyalty metric that measures how likely customers are to recommend your product or service to others.
+a) PRD Document: I collaborated with the fraud and collections teams to conceptualize NPS and created a Product Requirements Document (PRD) outlining the features, relevant stakeholders, and product roadmap.
+b) Data for training the model: I worked with fraud and collections to source NPS data from Mexico and India for preliminary analysis and model training.
+c) NPS Adoption: I led the PS data classification project to ensure accurate and efficient handling of crucial customer feedback data. Additionally, I prepared a future roadmap document to improve the conversion rate of the NPS survey from 2% to 5%.
+Impact:
+This is currently an ongoing project. However, post-implementation, we aim to increase the NPS conversion rate from 2% to 5% and automate the comment classification into different buckets, leading to headcount savings.
+3. New Initiatives:
+• Developed ChatGPT/Generative AI use cases for GAC.
+• Collaborated with teams to implement the ChatGPT summarization model in iSteno for improved accuracy.
+• Collaborated with CILA to implement the iSteno online tool.
+Non-Functional Contributions:
+1. Participation in HSBC Hackathon:
+I actively participated in the HSBC Hackathon, demonstrating my commitment to staying at the forefront of industry trends and incorporating innovative solutions into our projects.
+Behavioural Performance:
+• Demonstrated adherence to HSBC rules and regulations, ensuring all activities and leaves complied with HSBC Group Policy and guidelines.
+• Actively participated in all sessions, town halls, task force activities, Thursday talks, and other non-business activities.
+• Consistently completed all HR direct trainings on time.
+• Contributed to a positive work environment through interactions with others, building trust, working with integrity, and always being open to feedback.
+• Remained open to feedback and new changes, additionally, I actively supported others.
 
 
 
