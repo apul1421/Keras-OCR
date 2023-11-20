@@ -96,3 +96,32 @@ class UIPCallLoggerTest:
 if __name__ == "__main__":
     uip_call_logger_test = UIPCallLoggerTest()
     uip_call_logger_test.main()
+
+
+
+
+
+mport socket
+
+def main():
+    host = "gbw20090522.hbeu.adroot.hsbc"
+    port = 15160
+
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((host, port))
+            print(f"Connected to {host}:{port}")
+
+            message = "Hello, server!"
+            s.sendall(message.encode())
+
+            response = s.recv(1024)
+            print(f"Received response: {response.decode()}")
+
+    except socket.error as e:
+        print(f"Socket error: {str(e)}")
+    except Exception as e:
+        print(f"Caught Exception: {str(e)}")
+
+if __name__ == "__main__":
+    main()
