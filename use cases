@@ -1,17 +1,47 @@
 import socket
+import datetime
 
-HOST = 'localhost'  # The server hostname or IP address
-PORT = 5000        # The port used by the server
+class UIPCallLoggerTest:
+    def main(self):
+        print("Starting...")
+        self.go()
+        print("Exiting...")
 
-# Create a socket object
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    # Connect to the server
-    s.connect((HOST, PORT))
+    def go(self):
+        host = "gbw20090522.hbeu.adroot.hsbc"
+        port = 15160
+        print(self.get_ts() + f" - Open socket to {port}@{host}")
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.connect((host, port))
+                bis = s.makefile(mode="r")
+                out = s.makefile(mode="w")
 
-    # Send a message to the server
-    message = "Hello, server!"
-    s.sendall(message.encode('utf-8'))
+                up_host_msg = "0045\tversion\t1\t0\t2\t0treq_protver=1.2\treq_cmdver=1.2\n"
+                print(self.get_ts() + f" - Sending uphost msg = {up_host_msg}")
+                out.write(up_host_msg)
+                out.flush()
+                print(self.get_ts() + " - Message sent")
 
-    # Receive a message from the server
-    data = s.recv(1024)
-    print(f"Received message from server: {data.decode('utf-8')}")
+                resp_line = 1
+                while True:
+                    next_line = bis.readline()
+                    if not next_line:
+                        break
+                    print(self.get_ts() + f" - Read {resp_line} = {next_line.strip()}")
+                    resp_line += 1
+
+            except Exception as e:
+                print(self.get_ts() + f" - Caught Exception: {str(e)}")
+            finally:
+                s.close()
+
+    def get_ts(self):
+        current_ts = datetime.datetime.now().time()
+        return current_ts.strftime("%H:%M:%S.%f")[:-3]
+
+if __name__ == "__main__":
+    uip_call_logger_test = UIPCallLoggerTest()
+    print("Starting...")
+    uip_call_logger_test.main()
+    print("Exiting...")
