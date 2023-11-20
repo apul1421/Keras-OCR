@@ -45,3 +45,54 @@ if __name__ == "__main__":
     print("Starting...")
     uip_call_logger_test.main()
     print("Exiting...")
+
+
+
+
+import socket
+import datetime
+
+class UIPCallLoggerTest:
+    def main(self):
+        print("Starting...")
+        self.go()
+        print("Exiting...")
+
+    def go(self):
+        host = "gbw20090522.hbeu.adroot.hsbc"
+        port = 15160
+        print(self.get_ts() + f" - Open socket to {port}@{host}")
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            try:
+                s.connect((host, port))
+                bis = s.makefile(mode="r")
+                out = s.makefile(mode="w")
+
+                up_host_msg = "0045\tversion\t1\t0\t2\t0treq_protver=1.2\treq_cmdver=1.2\n"
+                print(self.get_ts() + f" - Sending uphost msg = {up_host_msg}")
+                out.write(up_host_msg)
+                out.flush()
+                print(self.get_ts() + " - Message sent")
+
+                resp_line = 1
+                while True:
+                    next_line = bis.readline()
+                    if not next_line:
+                        break
+                    print(self.get_ts() + f" - Read {resp_line} = {next_line.strip()}")
+                    resp_line += 1
+
+            except socket.error as e:
+                print(self.get_ts() + f" - Socket error: {str(e)}")
+            except Exception as e:
+                print(self.get_ts() + f" - Caught Exception: {str(e)}")
+            finally:
+                s.close()
+
+    def get_ts(self):
+        current_ts = datetime.datetime.now().time()
+        return current_ts.strftime("%H:%M:%S.%f")[:-3]
+
+if __name__ == "__main__":
+    uip_call_logger_test = UIPCallLoggerTest()
+    uip_call_logger_test.main()
