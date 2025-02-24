@@ -834,3 +834,42 @@ If paired with a structured OCR tool, confidence can be modeled probabilisticall
 
 Treat the LLM's ability to generate accurate responses as a probabilistic event.
 Use Bayesian analysis to
+
+
+
+Agentic AI vs. Generative AI: Key Differences
+
+Generative AI
+Focuses on creating new content (text, images, code, etc.) based on patterns learned from training data.
+Examples: ChatGPT, GPT-4, Bard, Claude.
+Use case: Generating text, extracting data, summarizing, or creating documents 
+
+Agentic AI
+Goes beyond generation and acts as an autonomous or semi-autonomous agent that can perform tasks, make decisions, and interact with systems/environments.
+It can plan, execute workflows, and adapt to feedback dynamically.
+Examples: DeepSeek R1, OpenAI o1, AutoGPT, Adept, HuggingGPT.
+Use case: Automating multi-step workflows, decision-making, and system interactions 
+
+In Underwriting use case, we are currently leveraging Generative AI to streamline discrete tasks such as document classification, data extraction, affordability checks, and memo creation. While this approach will significantly improve the efficiency, the future lies in Agentic AI—a more advanced paradigm that can deliver end-to-end automation and intelligent decision-making. Here’s how Agentic AI can enhance our underwriting process:
+
+Automated Decision-Making: 
+Agentic AI can be trained to make decisions based on predefined rules, compliance requirements, and risk thresholds, minimizing the need for human intervention. For example:
+•	Confidence Scoring: In cases where the AI’s confidence in its output is high (e.g., clear data, low-risk profile), it can finalize decisions autonomously, reducing manual review.
+•	Error Correction: Agentic AI can proactively identify and correct errors (e.g., data inconsistencies, missing information) before finalizing outputs, ensuring higher accuracy.
+Adaptive Decision-Making:
+Agentic AI can dynamically adapt to complex scenarios, such as:
+•	Quality Checks: If a document fails quality checks, the AI can automatically request additional documents from the customer or escalate the issue to a human agent.
+•	Risk Management: For high-risk cases, the AI can flag them for further review while processing low-risk cases autonomously.
+Dynamic Problem-Solving:
+Agentic AI excels at handling edge cases and unexpected challenges by:
+•	Switching Methods: If data extraction fails for a specific document type, the AI can switch to alternative extraction methods or flag the issue for review.
+•	Contextual Understanding: It can interpret ambiguous data and make informed decisions based on context, reducing reliance on manual intervention.
+
+
+
+
+Continuous Learning and Improvement:
+One of the most powerful features of Agentic AI is its ability to learn and evolve over time:
+•	Feedback Loop: By learning from human underwriters’ decisions and corrections, the AI improves its accuracy and decision-making capabilities.
+•	Compliance Updates: The AI can be continuously updated with the latest regulatory requirements, ensuring compliance without manual oversight.
+
